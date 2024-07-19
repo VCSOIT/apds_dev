@@ -24,7 +24,7 @@ jobs:
       - image: sonarsource/sonar-scanner-cli
     resource_class: small
     steps:
-      #- run:  apk update
+      - run: chmod +x apk update
       #- run:  apk upgrade
      # - run:  apk --no-cache add --update openssh git curl
       - checkout
